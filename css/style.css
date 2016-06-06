@@ -12,9 +12,7 @@
     color: white;
 }
 
-body {
-	background-color: #ccc;
-}
+
 
 .nav-bar {
 	width: 100vw;
@@ -127,4 +125,10 @@ body {
 .contact-head {
 	font-size: 13px;
 	font-weight: lighter;
+}
+
+.about {
+	display: none;
+	padding: 7%;
+	color: #ccc;
 }
