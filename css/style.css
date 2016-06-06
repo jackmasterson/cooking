@@ -12,7 +12,14 @@
     color: white;
 }
 
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
 
+p {
+	font-size: 15px;
+}
 
 .nav-bar {
 	width: 100vw;
@@ -129,6 +136,6 @@
 
 .about {
 	display: none;
-	padding: 7%;
+	padding: 8%;
 	color: #ccc;
 }
