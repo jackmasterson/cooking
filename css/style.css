@@ -38,6 +38,7 @@ p {
 	height: 50vh;
 	background: url(..//img/cook-back-three.jpeg) no-repeat;
 	background-size: cover;
+	border: 3px solid white;
 }
 
 .half-width {
@@ -88,6 +89,7 @@ p {
 	font-style: italic;
 	font-size: 45px;
 	padding-top: 10%;
+	letter-spacing: 30px
 }
 
 .head-sub-header {

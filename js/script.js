@@ -33,9 +33,26 @@ var atfView = {
 	},
 
 	bottomHalf: function() {
+		var leftDiv = "<div class='half-width div-left'></div";
+		var shade = "<div class='shade dated'></div>";
+		var learnHead = "<h2 class='learn-head'></h2>";
+		var classHead = "<a href='#/'>Upcoming Classes</a>";
+		var hiddenDates = "<div class='date-hidden'></div>";
+		var dateUL = "<ul class='date-ul'>" +
+						 "<li>Monday, March 3</li>"+
+						 "<li>6:00pm</li>"+
+						 "<li>Manasquan Rec Center</li>"+
+					 "</ul>";
 
+		$('body').append(leftDiv);
+		$('.half-width.div-left').append(shade);
+		$('.half-width.div-left').append(hiddenDates);
+		$('.date-hidden').append(dateUL);
+		$('.dated').append(learnHead);
+		$('.learn-head').append(classHead);
 	}
 
 };
 
 atfView.topHalf();
+atfView.bottomHalf();
