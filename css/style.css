@@ -9,12 +9,36 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 body {
 	background-color: #ccc;
 }
 
+h2 {
+	font-size: 20px;
+}
+
+.head-header {
+	padding-top: 10%;
+}
+
+.head-sub-header {
+	font-weight: lighter;
+}
+
+.basic-head {
+	padding-top: 22%;
+}
+
+.ingred-head {
+	padding-top: 12%;
+}
+
+.love-head {
+	padding-top: 18%;
+}
 .nav-bar {
 	width: 100vw;
 	height: 8vh;
