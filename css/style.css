@@ -1,0 +1,11 @@
+.nav-bar {
+	width: 100vw;
+	height: 15vh;
+	background-color: tan;
+}
+
+.full-width {
+	width: 100vw;
+	height: 33vh;
+	background-color: red;
+}
