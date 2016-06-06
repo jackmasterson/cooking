@@ -9,6 +9,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 body {
@@ -29,14 +30,14 @@ body {
 
 .full-width {
 	width: 100vw;
-	height: 46vh;
+	height: 50vh;
 	background: url(..//img/cook-back-three.jpeg) no-repeat;
 	background-size: cover;
 }
 
 .half-width {
 	width: 49.7vw;
-	height: 46vh;
+	height: 50vh;
 	display: inline-block;
 	margin: 0;
 	border: 3px solid white;
@@ -76,6 +77,24 @@ body {
 	width: 49.6%;
 	height: 100%;
 	display: inline-block
+}
+
+.head-header {
+	font-style: italic;
+	font-size: 45px;
+	padding-top: 10%;
+}
+
+.learn-head {
+	padding-top: 22%;
+}
+
+.eat-head {
+	padding-top: 10%;
+}
+
+.love-head {
+	padding-top: 20%;
 }
 
 .nav-li {
