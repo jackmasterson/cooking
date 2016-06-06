@@ -85,6 +85,10 @@ body {
 	padding-top: 10%;
 }
 
+.head-sub-header {
+	font-weight: lighter;
+}
+
 .learn-head {
 	padding-top: 22%;
 }
@@ -94,7 +98,7 @@ body {
 }
 
 .love-head {
-	padding-top: 20%;
+	padding-top: 22%;
 }
 
 .nav-li {
