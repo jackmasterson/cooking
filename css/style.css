@@ -108,6 +108,17 @@ body {
 	padding-top: 1%;
 }
 
+
+.date-hidden {
+	display: none;
+	padding-top: 20%;
+}
+
+.date-ul {
+	float: left;
+	width: 45%;
+}
+
 .contact-hidden {
 	display: none;
 	padding-top: 20%;

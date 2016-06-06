@@ -3,4 +3,10 @@ function contact() {
 		$('.contact-hidden').fadeIn();
 	});
 	
+};
+
+function dates() {
+	$('.learn-head').slideToggle(function() {
+		$('.date-hidden').slideToggle();
+	})
 }
