@@ -18,26 +18,55 @@ function about() {
 };
 
 
-var model = [
+var model =
 	{
-		backImg: "url(..//img/cook-back.png",
-		date: "Monday, March 3",
-		time: "6:00pm",
-		location: "Manasquan Rec Center"
-	},
-	{
-		backImg: "url(..//img/cook-back-five.jpeg",
-		date: "Thursday, July 6",
-		time: "3:00pm",
-		location: "Sea Girt Elementary School"
-	}
-];
+		dated: [
+			{
+				backImg: "url(..//cooking/img/cook-back.png",
+				date: "Monday, March 3",
+				time: "6:00pm",
+				location: "Manasquan Rec Center"
+			},
+			{
+				backImg: "url(..//cooking/img/cook-back-five.jpeg",
+				date: "Thursday, July 6",
+				time: "3:00pm",
+				location: "Sea Girt Elementary School"
+			}
+		],
+
+		halfHeight: [
+			{
+				head: "Competitions",
+				backImg: "url(..//cooking/img/cook-back.png)",
+				splitIt: ko.observable(false)
+			},
+			{
+				head: "",
+				backImg: "",
+				splitIt: ko.observable(true),
+			}
+		],
+
+		moreInfo: [
+					{
+						head: "About Us",
+						backImg: "url(..//cooking/img/cook-back-four.jpg)",
+						text: "HIIIII"
+					},
+					{
+						head: "Contact",
+						backImg: "url(..//cooking/img/cook-back-five.jpeg)",
+						text: "HEYYY"
+					}
+		]
+	};
 
 var viewModel = {
 	init: function() {
 		atfView.topHalf();
 		atfView.bottomHalf();
-		atfClick.dates();
+	//	atfClick.dates();
 	}
 };
 
@@ -91,16 +120,23 @@ var atfView = {
 
 };
 
-var atfClick = {
+var clicked = {
 
 	dates: function() {
-		$('.class-href').click(function(){
+	
 		//	console.log('hey!');
 			$('.learn-head').fadeOut(function(){
 				$('.dated').fadeIn();
 			});
 			
-		});
+
+	},
+
+	competition: function() {
+		console.log(this);
+		var comp = document.getElementsByClassName('comp');
+		console.log(comp);
+		
 	}
 };
 

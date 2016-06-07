@@ -80,9 +80,10 @@ p {
 }
 
 .half-perc {
-	width: 49.6%;
+	width: 100%;
 	height: 100%;
-	display: inline-block
+	display: inline-block;
+	border: 2px solid white;
 }
 
 .head-header {
@@ -147,3 +148,12 @@ p {
 	padding: 8%;
 	color: #ccc;
 }
+
+.quartered {
+	width: 50%;
+	
+	float: left;
+	border: 2px solid white;
+}
+
+

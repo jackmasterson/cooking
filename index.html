@@ -11,14 +11,32 @@
 <div class="half-width div-left">
 	<div class="shade">
 		<h2 class="learn-head">
-			<a class='class-href' href='#/'>Upcoming Classes</a>
+			<a class='class-href' data-bind="click: clicked.dates">Upcoming Classes</a>
 		</h2>
-		<div class="dated" data-bind="foreach: model">
+		<div class="dated" data-bind="foreach: model.dated">
 			<ul class="date-ul">
 				<li data-bind="text: date"></li>
 				<li data-bind="text: time"></li>
 				<li data-bind="text: location"></li>
 			</ul>
+		</div>
+	</div>
+</div>
+<div class="half-width" data-bind="foreach: model.halfHeight">
+	<div class="half-height">
+		<div class="half-perc" data-bind="style: { backgroundImage: backImg, backgroundSize: 'cover' }">
+			<div class="shade">
+				<h3>
+					<a data-bind="text: head, click: clicked.competition"></a>
+				</h3>
+				<div data-bind="visible: splitIt, foreach: model.moreInfo">
+					<div class="quartered">
+						<div data-bind="style: { backgroundImage: backImg, backgroundSize: 'cover' }">
+							<h3 data-bind="text: head"></h3>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
