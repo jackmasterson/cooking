@@ -38,7 +38,10 @@
 				<h3 class="not-hidden" data-bind="attr: { 'id': headID }">
 					<a href="#/" data-bind="text: head, click: clicked.philosophy"></a>
 				</h3>
-				<p class="hidden-par" data-bind="text: text, attr: { 'id': id }"></p>
+				<div class="hidden-par" data-bind="attr: { 'id': id }">
+					<p data-bind="text: textFirst">
+					<p data-bind="text: textSecond"></p>
+				</div>
 			</div>
 		</div>
 	</div>

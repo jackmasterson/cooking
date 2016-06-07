@@ -46,9 +46,10 @@ var model =
 					{
 						head: "About Us",
 						backImg: "url(..//cooking/img/cook-back-five.jpeg)",
-						text: "We love to cook. "+
+						textFirst: "We love to cook. "+
 						"We love to spread our love of "+
-						"cooking to the world. We're based in Sea "+
+						"cooking to the world.",
+						textSecond: "We're based in Sea "+
 						"Girt, NJ and do classes throughout Monmouth "+
 						"County.",
 						id: "philosophy",
@@ -57,7 +58,8 @@ var model =
 					{
 						head: "Contact",
 						backImg: "url(..//cooking/img/cook-back-four.jpg)",
-						text: "email/phone: fakeEmail@fakeEmail.com/(555) 555-5555",
+						textFirst: "email: fakeEmail@fakeEmail.com",
+						textSecond: "phone: (555) 555-5555",
 						id: "contact",
 						headID: "contact-head"
 					}
