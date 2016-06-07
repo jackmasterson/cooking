@@ -22,27 +22,30 @@
 		</div>
 	</div>
 </div>
-<div class="half-width" data-bind="foreach: model.halfHeight">
-	<div class="half-height">
+<div class="half-width">
+	<div class="half-height" data-bind="foreach: model.halfHeight">
 		<div class="half-perc" data-bind="style: { backgroundImage: backImg, backgroundSize: 'cover' }">
 			<div class="shade">
-				<h3>
+				<h3 class="competition-head">
 					<a data-bind="text: head, click: clicked.competition"></a>
 				</h3>
-				<div data-bind="visible: splitIt, foreach: model.moreInfo" class="quartered">
-						<div class="quart" data-bind="style: { backgroundImage: backImg, backgroundSize: 'cover' }">
-							<div class="shade">
-								<h3 class="not-hidden" data-bind="attr: { 'id': headID }">
-									<a href="#/" data-bind="text: head, click: clicked.philosophy"></a>
-								</h3>
-								<p class="hidden" data-bind="text: text, attr: { 'id': id }"></p>
-							</div>
-						</div>
-				</div>
+			</div>
+		</div>
+	</div>
+	<div data-bind="foreach: model.moreInfo">
+		<div class="quart" data-bind="style: { backgroundImage: backImg, backgroundSize: 'cover' }">
+			<div class="shade">
+				<h3 class="not-hidden" data-bind="attr: { 'id': headID }">
+					<a href="#/" data-bind="text: head, click: clicked.philosophy"></a>
+				</h3>
+				<p class="hidden-par" data-bind="text: text, attr: { 'id': id }"></p>
 			</div>
 		</div>
 	</div>
 </div>
+
+
+
 <script src="js/lib/knockout-3.2.0.js"></script>
 <script src="js/lib/jquery-1.12.4.min.js"></script>
 <script src="js/script.js"></script>

@@ -149,23 +149,31 @@ p {
 	color: #ccc;
 }
 
-.quartered {
-
-	height: 100%;
-
-}
-
 .quart {
 	border: 2px solid white;
 	width: 50%;
-	height: 100%;
+	height: 25vh;
 	float: left;
 }
 
-.hidden {
+.hidden-par {
 	display: none;
+	padding: 7%;
+
 }
 
+.not-hidden {
+	padding-top: 20%;
+}
+
+.competition-head {
+	padding-top: 12%;
+	padding-bottom: 0 ;
+}
+
+#contact {
+	padding-top: 15%;
+}
 
 
 

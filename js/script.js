@@ -38,13 +38,7 @@ var model =
 		halfHeight: [
 			{
 				head: "Competitions",
-				backImg: "url(..//cooking/img/cook-back.png)",
-				splitIt: ko.observable(false)
-			},
-			{
-				head: "",
-				backImg: "",
-				splitIt: ko.observable(true),
+				backImg: "url(..//cooking/img/cook-back.png)"
 			}
 		],
 
@@ -63,7 +57,7 @@ var model =
 					{
 						head: "Contact",
 						backImg: "url(..//cooking/img/cook-back-four.jpg)",
-						text: "HEYYY",
+						text: "email/phone: fakeEmail@fakeEmail.com/(555) 555-5555",
 						id: "contact",
 						headID: "contact-head"
 					}
@@ -115,15 +109,15 @@ var clicked = {
 	},
 
 	philosophy: function() {
-		var headID = this.headID;
-		var ID = this.id;
+		var headID = '#' + this.headID;
+		var ID = '#' + this.id;
 		console.log(headID);
 		console.log(this);
 		var philosophy = document.getElementById('philosophy');
 		var contact = document.getElementById('contact');
 
-		$('.not-hidden').fadeOut(function(){
-			$('.hidden').fadeIn();
+		$(headID).fadeOut(function(){
+			$(ID).fadeIn();
 		});
 
 
