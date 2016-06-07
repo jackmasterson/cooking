@@ -17,6 +17,13 @@ function about() {
 	});
 };
 
+
+var expView = {
+
+	//var landing = "<div class='full-width'></div>";
+	var shade = "<div class='shade'></div>";
+	var header = "<h1 class='head'></h1>";
+}
 var atfView = {
 	
 	topHalf: function() {
@@ -33,26 +40,54 @@ var atfView = {
 	},
 
 	bottomHalf: function() {
-		var leftDiv = "<div class='half-width div-left'></div";
-		var shade = "<div class='shade dated'></div>";
-		var learnHead = "<h2 class='learn-head'></h2>";
-		var classHead = "<a href='#/'>Upcoming Classes</a>";
-		var hiddenDates = "<div class='date-hidden'></div>";
-		var dateUL = "<ul class='date-ul'>" +
-						 "<li>Monday, March 3</li>"+
-						 "<li>6:00pm</li>"+
-						 "<li>Manasquan Rec Center</li>"+
-					 "</ul>";
 
-		$('body').append(leftDiv);
-		$('.half-width.div-left').append(shade);
-		$('.half-width.div-left').append(hiddenDates);
-		$('.date-hidden').append(dateUL);
-		$('.dated').append(learnHead);
-		$('.learn-head').append(classHead);
+		function leftSide() {
+			var leftDiv = "<div class='half-width div-left'></div";
+			var shade = "<div class='shade dated'>"+
+							"<ul class='date-ul'>" +
+								 "<li>Monday, March 3</li>"+
+								 "<li>6:00pm</li>"+
+								 "<li>Manasquan Rec Center</li>"+
+							"</ul>"+
+							"<ul class='date-ul'>" +
+								 "<li>Tuesday, July </li>"+
+								 "<li>5:00pm</li>"+
+								 "<li>Sea Girt Elementary School</li>"+
+							"</ul>"+
+						"</div>";
+			var learnHead = "<h2 class='learn-head'></h2>";
+			var classHead = "<a class='class-href' href='#/'>Upcoming Classes</a>";
+			var hiddenDates = "<div class='date-hidden'></div>";
+
+			$('body').append(leftDiv);
+			$('.half-width.div-left').append(shade);
+			$('.dated').append(hiddenDates);
+			$('.dated').append(learnHead);
+			$('.learn-head').append(classHead);
+		};
+		leftSide();
+
+		function rightSide() {
+
+		}
 	}
 
 };
 
+var atfClick = {
+
+	dates: function() {
+		$('.class-href').click(function(){
+		//	console.log('hey!');
+			$('.learn-head').fadeOut(function(){
+				$('.date-ul').fadeIn();
+			});
+			
+		});
+	}
+};
+
+
 atfView.topHalf();
 atfView.bottomHalf();
+atfClick.dates();

@@ -123,6 +123,9 @@ p {
 
 .date-ul {
 	float: left;
+	display: none;
+	padding-top: 20%;
+	padding-left: 8%;
 	width: 45%;
 }
 
