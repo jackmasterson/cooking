@@ -18,12 +18,29 @@ function about() {
 };
 
 
-var expView = {
+var model = [
+	{
+		backImg: "url(..//img/cook-back.png",
+		date: "Monday, March 3",
+		time: "6:00pm",
+		location: "Manasquan Rec Center"
+	},
+	{
+		backImg: "url(..//img/cook-back-five.jpeg",
+		date: "Thursday, July 6",
+		time: "3:00pm",
+		location: "Sea Girt Elementary School"
+	}
+];
 
-	//var landing = "<div class='full-width'></div>";
-	var shade = "<div class='shade'></div>";
-	var header = "<h1 class='head'></h1>";
-}
+var viewModel = {
+	init: function() {
+		atfView.topHalf();
+		atfView.bottomHalf();
+		atfClick.dates();
+	}
+};
+
 var atfView = {
 	
 	topHalf: function() {
@@ -41,7 +58,7 @@ var atfView = {
 
 	bottomHalf: function() {
 
-		function leftSide() {
+		/*function leftSide() {
 			var leftDiv = "<div class='half-width div-left'></div";
 			var shade = "<div class='shade dated'>"+
 							"<ul class='date-ul'>" +
@@ -65,7 +82,7 @@ var atfView = {
 			$('.dated').append(learnHead);
 			$('.learn-head').append(classHead);
 		};
-		leftSide();
+		leftSide();*/
 
 		function rightSide() {
 
@@ -80,14 +97,11 @@ var atfClick = {
 		$('.class-href').click(function(){
 		//	console.log('hey!');
 			$('.learn-head').fadeOut(function(){
-				$('.date-ul').fadeIn();
+				$('.dated').fadeIn();
 			});
 			
 		});
 	}
 };
 
-
-atfView.topHalf();
-atfView.bottomHalf();
-atfClick.dates();
+ko.applyBindings(viewModel.init());

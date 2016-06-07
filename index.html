@@ -8,7 +8,20 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<div class="half-width div-left">
+	<div class="shade">
+		<h2 class="learn-head">
+			<a class='class-href' href='#/'>Upcoming Classes</a>
+		</h2>
+		<div class="dated" data-bind="foreach: model">
+			<ul class="date-ul">
+				<li data-bind="text: date"></li>
+				<li data-bind="text: time"></li>
+				<li data-bind="text: location"></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 <div class="half-width">
 	<div class="half-height div-top">
