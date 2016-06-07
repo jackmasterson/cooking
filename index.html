@@ -29,41 +29,15 @@
 				<h3>
 					<a data-bind="text: head, click: clicked.competition"></a>
 				</h3>
-				<div data-bind="visible: splitIt, foreach: model.moreInfo">
-					<div class="quartered">
-						<div data-bind="style: { backgroundImage: backImg, backgroundSize: 'cover' }">
-							<h3 data-bind="text: head"></h3>
+				<div data-bind="visible: splitIt, foreach: model.moreInfo" class="quartered">
+						<div class="quart" data-bind="style: { backgroundImage: backImg, backgroundSize: 'cover' }">
+							<div class="shade">
+								<h3 class="not-hidden" data-bind="attr: { 'id': headID }">
+									<a href="#/" data-bind="text: head, click: clicked.philosophy"></a>
+								</h3>
+								<p class="hidden" data-bind="text: text, attr: { 'id': id }"></p>
+							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="half-width">
-	<div class="half-height div-top">
-		<h2 class="eat-head">Competitions</h2>
-	</div>
-	<div class="half-height">
-		<div class="half-perc div-top-two">
-			<div class="shade">
-				<h3 class="love-head abouted">
-					<a href="#/" onClick="about()">About Us</a>
-				</h3>
-				<div class="about">
-					<p>We love to cook. We love to spread our love of cooking to the world. We're based in Sea Girt, NJ and do classes throughout Monmouth County.</p>
-				</div>
-			</div>
-		</div>
-		<div class="half-perc div-bottom">
-			<div class="shade">
-				<h3 class="love-head contacted">
-					<a href="#/" onClick="contact()">Contact</a>
-				</h3>
-				<div class="contact-hidden">
-					<h3 class="contact-head">Email: youremail@fakeEmail.com</h3>
-					<h3 class="contact-head">Phone: (555) 555-5555</h3>
 				</div>
 			</div>
 		</div>

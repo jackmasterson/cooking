@@ -51,13 +51,21 @@ var model =
 		moreInfo: [
 					{
 						head: "About Us",
-						backImg: "url(..//cooking/img/cook-back-four.jpg)",
-						text: "HIIIII"
+						backImg: "url(..//cooking/img/cook-back-five.jpeg)",
+						text: "We love to cook. "+
+						"We love to spread our love of "+
+						"cooking to the world. We're based in Sea "+
+						"Girt, NJ and do classes throughout Monmouth "+
+						"County.",
+						id: "philosophy",
+						headID: "phil-head"
 					},
 					{
 						head: "Contact",
-						backImg: "url(..//cooking/img/cook-back-five.jpeg)",
-						text: "HEYYY"
+						backImg: "url(..//cooking/img/cook-back-four.jpg)",
+						text: "HEYYY",
+						id: "contact",
+						headID: "contact-head"
 					}
 		]
 	};
@@ -65,7 +73,7 @@ var model =
 var viewModel = {
 	init: function() {
 		atfView.topHalf();
-		atfView.bottomHalf();
+	//	atfView.bottomHalf();
 	//	atfClick.dates();
 	}
 };
@@ -83,39 +91,6 @@ var atfView = {
 		$('.header').append(heading);
 		$('.header').append(subHeading);
 
-	},
-
-	bottomHalf: function() {
-
-		/*function leftSide() {
-			var leftDiv = "<div class='half-width div-left'></div";
-			var shade = "<div class='shade dated'>"+
-							"<ul class='date-ul'>" +
-								 "<li>Monday, March 3</li>"+
-								 "<li>6:00pm</li>"+
-								 "<li>Manasquan Rec Center</li>"+
-							"</ul>"+
-							"<ul class='date-ul'>" +
-								 "<li>Tuesday, July </li>"+
-								 "<li>5:00pm</li>"+
-								 "<li>Sea Girt Elementary School</li>"+
-							"</ul>"+
-						"</div>";
-			var learnHead = "<h2 class='learn-head'></h2>";
-			var classHead = "<a class='class-href' href='#/'>Upcoming Classes</a>";
-			var hiddenDates = "<div class='date-hidden'></div>";
-
-			$('body').append(leftDiv);
-			$('.half-width.div-left').append(shade);
-			$('.dated').append(hiddenDates);
-			$('.dated').append(learnHead);
-			$('.learn-head').append(classHead);
-		};
-		leftSide();*/
-
-		function rightSide() {
-
-		}
 	}
 
 };
@@ -136,6 +111,22 @@ var clicked = {
 		console.log(this);
 		var comp = document.getElementsByClassName('comp');
 		console.log(comp);
+		
+	},
+
+	philosophy: function() {
+		var headID = this.headID;
+		var ID = this.id;
+		console.log(headID);
+		console.log(this);
+		var philosophy = document.getElementById('philosophy');
+		var contact = document.getElementById('contact');
+
+		$('.not-hidden').fadeOut(function(){
+			$('.hidden').fadeIn();
+		});
+
+
 		
 	}
 };
