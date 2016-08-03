@@ -22,13 +22,13 @@ var model =
 	{
 		dated: [
 			{
-				backImg: "url(..//cooking/img/cook-back.png",
+				backImg: "url(..//img/cook-back.png",
 				date: "Monday, March 3",
 				time: "6:00pm",
 				location: "Manasquan Rec Center"
 			},
 			{
-				backImg: "url(..//cooking/img/cook-back-five.jpeg",
+				backImg: "url(..//img/cook-back-five.jpeg",
 				date: "Thursday, July 6",
 				time: "3:00pm",
 				location: "Sea Girt Elementary School"
@@ -38,14 +38,14 @@ var model =
 		halfHeight: [
 			{
 				head: "Competitions",
-				backImg: "url(..//cooking/img/cook-back.png)"
+				backImg: "url(..//img/cook-back.png)"
 			}
 		],
 
 		moreInfo: [
 					{
 						head: "About Us",
-						backImg: "url(..//cooking/img/cook-back-five.jpeg)",
+						backImg: "url(..//img/cook-back-five.jpeg)",
 						textFirst: "We love to cook. "+
 						"We love to spread our love of "+
 						"cooking to the world.",
@@ -57,7 +57,7 @@ var model =
 					},
 					{
 						head: "Contact",
-						backImg: "url(..//cooking/img/cook-back-four.jpg)",
+						backImg: "url(..//img/cook-back-four.jpg)",
 						textFirst: "email: fakeEmail@fakeEmail.com",
 						textSecond: "phone: (555) 555-5555",
 						id: "contact",
